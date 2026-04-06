@@ -3,107 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — Solacium</title>
-  <meta name="description" content="Privacy Policy for Solacium">
+  <title>Privacy — Solacium</title>
+  <meta name="description" content="Privacy policy for Solacium.">
   <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
   <meta name="googlebot" content="noindex, nofollow">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    .privacy-wrapper {
-      padding-top: calc(var(--header-height) + 60px);
-      padding-bottom: 100px;
-    }
-    .privacy-inner {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 0 32px;
-    }
-    .privacy-inner h1 {
-      font-family: var(--font-heading);
-      font-size: 2.6rem;
-      font-weight: 400;
-      margin-bottom: 12px;
-    }
-    .privacy-inner .subtitle {
-      font-size: 0.95rem;
-      color: var(--color-text-light);
-      margin-bottom: 40px;
-    }
-    .privacy-inner h2 {
-      font-family: var(--font-heading);
-      font-size: 1.5rem;
-      font-weight: 400;
-      margin-top: 40px;
-      margin-bottom: 14px;
-    }
-    .privacy-inner p {
-      font-size: 1rem;
-      line-height: 1.75;
-      margin-bottom: 18px;
-    }
-    .privacy-inner ul {
-      padding-left: 24px;
-      margin-bottom: 18px;
-    }
-    .privacy-inner li {
-      font-size: 1rem;
-      line-height: 1.75;
-      margin-bottom: 10px;
-    }
-  </style>
 </head>
-<body>
+<body class="privacy">
 
-  <header class="header" id="header">
-    <div class="header-inner">
-      <a href="/" class="logo">Solacium</a>
-      <nav class="nav">
-        <a href="/#contact" class="nav-link">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <div class="privacy-wrapper">
-    <div class="privacy-inner">
+  <main>
+    <div class="container">
+      <a href="/" class="back-link">&larr; Back</a>
       <h1>Privacy Policy</h1>
       <p class="subtitle">Last updated: April 5, 2026</p>
 
       <p>Solacium ("we", "our", "us") respects your privacy and is committed to being transparent about how we handle your information.</p>
 
       <h2>What we collect</h2>
-      <p>We keep data collection to an absolute minimum.</p>
+      <p>We keep data collection to an absolute minimum. The only information we collect through this website is what you voluntarily provide in our contact form: your name, email address, and the message you send us.</p>
 
-      <p><strong>Information you provide voluntarily:</strong></p>
+      <h2>What we don't collect</h2>
       <ul>
-        <li>When you contact us through our contact form, we collect your name, email address, and the contents of your message.</li>
-      </ul>
-
-      <p><strong>Information we do not collect:</strong></p>
-      <ul>
-        <li>We do not use cookies for tracking or advertising</li>
-        <li>We do not use analytics tools on this website</li>
-        <li>We do not track your browsing behavior</li>
-        <li>We do not collect device information, IP addresses, or location data through this website</li>
-        <li>We do not use third-party tracking pixels</li>
+        <li>No cookies or tracking</li>
+        <li>No analytics</li>
+        <li>No browsing behavior logging</li>
+        <li>No device information or IP addresses</li>
+        <li>No third-party tracking pixels</li>
       </ul>
 
       <h2>How we use your information</h2>
-      <p>If you contact us through our form, we use the information you provide solely to respond to your message. We will never sell, rent, or share your information with third parties for marketing purposes.</p>
+      <p>Information you submit through our contact form is used solely to respond to your message. We will never sell, rent, or share your information with third parties for marketing purposes.</p>
 
       <h2>Third-party services</h2>
-      <p>We use the following third-party services:</p>
-      <ul>
-        <li><strong>Formspree:</strong> To process contact form submissions. When you submit your message, it is processed by Formspree before being forwarded to us. Their privacy policy is available at formspree.io/legal/privacy-policy.</li>
-        <li><strong>GitHub Pages:</strong> To host this website. GitHub may collect basic server logs.</li>
-        <li><strong>Google Fonts:</strong> To serve typefaces used on this website. Google may collect basic usage data when fonts are loaded.</li>
-      </ul>
+      <p>We use Formspree to process contact form submissions and GitHub Pages to host this website. Both may process standard server logs as part of their operation.</p>
 
       <h2>Your rights</h2>
       <p>You have the right to access any personal data we hold about you, request its deletion, or withdraw consent for communications at any time.</p>
@@ -114,23 +53,19 @@
       <h2>Changes to this policy</h2>
       <p>We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated "Last updated" date.</p>
     </div>
-  </div>
+  </main>
 
   <footer class="footer">
     <div class="footer-inner">
-      <div class="footer-left">&copy; 2026 Solacium. All rights reserved.</div>
+      <div class="footer-info">
+        Solacium Ventures Ltd &middot; Registered in England and Wales<br>
+        Company No. 16338230 &middot; 124 City Road, London, EC1V 2NX
+      </div>
       <div class="footer-links">
-        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/privacy.html">Privacy</a>
       </div>
     </div>
   </footer>
-
-  <script>
-    const header = document.getElementById('header');
-    window.addEventListener('scroll', () => {
-      header.classList.toggle('scrolled', window.scrollY > 10);
-    });
-  </script>
 
 </body>
 </html>
